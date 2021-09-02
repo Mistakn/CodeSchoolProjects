@@ -1,0 +1,85 @@
+﻿@page "/"
+@implements IDisposable
+@inject IProductAPI ProductAPI
+@inject NavigationManager NavigationManager
+
+
+<div class="row py-3 border-bottom justify-content-end">
+    <div class="col-6 col-md-8">
+        @if (brand != null) {
+            <span class="h4 font-weight-bold">@products.Count</span> <span class="h4">result(s) for "<span class="h4 font-weight-bold">@brand</span>"</span>
+        }
+        @if (search != null) {
+            <span class="h4 font-weight-bold">@products.Count</span> <span class="h4">result(s) for "<span class="h4 font-weight-bold">@search</span>"</span>
+        }
+    </div>
+
+    <div class="col-6 col-md-4">
+        <select class="form-control" @onchange="async (val) => await FilterChange(val)">
+            <option value="true">A-Z</option>
+            <option value="false">Z-A</option>
+        </select>
+    </div>
+</div>
+
+<div class="row">
+    @if (products.Count == 0) {
+        <div class="col-12 text-center">
+            <span class="h3 font-weight-bold">No results :(</span>
+        </div>
+    } else {
+        @foreach (var product in products) {
+            <Product Data="product" />
+        }
+    }
+</div>
+
+@code {
+
+    private string brand { get; set; }
+    private string search { get; set; }
+    private bool filter { get; set; }
+
+    private List<ProductDTO> products = new();
+
+    protected override async Task OnInitializedAsync() {
+
+        NavigationManager.LocationChanged += async (sender, e) => await LocationChanged(sender, e);
+
+        brand = NavigationManager.QueryString("brand");
+        search = NavigationManager.QueryString("search");
+
+        await getProducts(search, brand, filter);
+    }
+
+    // Attaches this event to the Locationchanged event
+    async Task LocationChanged(object sender, LocationChangedEventArgs e) {
+        brand = ExtensionMethods.QueryString(e.Location, "brand");
+        search = ExtensionMethods.QueryString(e.Location, "search");
+
+        await getProducts(search, brand, filter);
+    }
+
+
+    async Task FilterChange(ChangeEventArgs e) {
+        filter = e.Value.ToString() == "true" ? true : false;
+        brand = NavigationManager.QueryString("brand");
+        search = NavigationManager.QueryString("search");
+
+        await getProducts(search, brand, filter);
+    }
+
+    async Task getProducts(string search, string brand, bool filter) {
+        try {
+            products = await ProductAPI.GetProductsAsync(search, brand, filter);
+        } catch (AccessTokenNotAvailableException ex) {
+            ex.Redirect();
+        }
+        StateHasChanged();
+    }
+
+
+    void IDisposable.Dispose() {
+        NavigationManager.LocationChanged -= async (sender, e) => await LocationChanged(sender, e);
+    }
+}

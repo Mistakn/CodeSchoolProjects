@@ -1,0 +1,82 @@
+﻿@page "/EditCustomer/{CustomerID}"
+@model MyOnlinePetStoreWeb.Pages.EditCustomerModel
+
+
+<form method="post">
+
+    <div class="row">
+
+        @* Customer DTO *@
+        <div class="col-12 mt-4 mb-3">
+            <span class="h4">Customer Info</span>
+        </div>
+
+        <input type="hidden"
+               class="form-control"
+               asp-for="CustomerDTO.CustomerID" />
+
+        <div class="col-12 col-md-6 my-3">
+
+            <div class="form-group">
+                <label asp-for="CustomerDTO.FirstName">First Name</label>
+                <input type="text"
+                       class="form-control"
+                       asp-for="CustomerDTO.FirstName" />
+                <span asp-validation-for="CustomerDTO.FirstName"
+                      class="text-danger"></span>
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-6 my-3">
+
+            <div class="form-group">
+                <label asp-for="CustomerDTO.LastName">Last Name</label>
+                <input type="text"
+                       class="form-control"
+                       asp-for="CustomerDTO.LastName" />
+                <span asp-validation-for="CustomerDTO.LastName"
+                      class="text-danger"></span>
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-6 my-3">
+
+            <div class="form-group">
+                <label asp-for="CustomerDTO.Phone">Phone</label>
+                <input type="text"
+                       class="form-control"
+                       asp-for="CustomerDTO.Phone" />
+                <span asp-validation-for="CustomerDTO.Phone"
+                      class="text-danger"></span>
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-6 my-3">
+
+            <div class="form-group">
+                <label asp-for="CustomerDTO.Email">Email</label>
+                <input type="text"
+                       class="form-control"
+                       asp-for="CustomerDTO.Email" />
+                <span asp-validation-for="CustomerDTO.Email"
+                      class="text-danger"></span>
+            </div>
+
+        </div>
+        @* END Customer DTO *@
+
+    </div>
+
+    <div class="row justify-content-center mt-3">
+        <div class="col-6 d-grid">
+            <button type="submit"
+                    class="btn btn-primary">
+                Submit
+            </button>
+        </div>
+    </div>
+
+</form>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Demo Label</title>
+</head>
+
+<body>
+    <script>
+        console.log("Odd number count started");
+
+        let oddsCount = 0;
+
+        odd_number:
+        for (let i = 1; i <= 10; i++) {
+            console.log("iteration:", i);
+
+            var number = Math.floor(Math.random() * 12) + 1;
+            console.log(number);
+
+            if (i % 2 == 0) {
+                continue odd_number;
+            }
+
+            oddsCount++;
+            console.log("Number:", number);
+        }
+
+        console.log(oddsCount + " odd numbers found");
+    </script>
+</body>
+
+</html>

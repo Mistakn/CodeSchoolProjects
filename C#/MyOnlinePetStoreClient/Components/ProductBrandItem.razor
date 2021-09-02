@@ -1,0 +1,10 @@
+﻿<div class="col-auto">
+    <a href="/?brand=@Data.Id" class="btn text-center rounded py-3 px-3 product_brand__item">
+        <span class="h5 text-white">@Data.Name</span>
+    </a>
+</div>
+
+@code {
+    [Parameter]
+    public ProductBrandDTO Data { get; set; }
+}

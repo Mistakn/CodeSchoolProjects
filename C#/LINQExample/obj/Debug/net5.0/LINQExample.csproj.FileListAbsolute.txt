@@ -1,0 +1,16 @@
+C:\Users\Hekki\source\repos\LINQExample\bin\Debug\net5.0\LINQExample.exe
+C:\Users\Hekki\source\repos\LINQExample\bin\Debug\net5.0\LINQExample.deps.json
+C:\Users\Hekki\source\repos\LINQExample\bin\Debug\net5.0\LINQExample.runtimeconfig.json
+C:\Users\Hekki\source\repos\LINQExample\bin\Debug\net5.0\LINQExample.runtimeconfig.dev.json
+C:\Users\Hekki\source\repos\LINQExample\bin\Debug\net5.0\LINQExample.dll
+C:\Users\Hekki\source\repos\LINQExample\bin\Debug\net5.0\ref\LINQExample.dll
+C:\Users\Hekki\source\repos\LINQExample\bin\Debug\net5.0\LINQExample.pdb
+C:\Users\Hekki\source\repos\LINQExample\obj\Debug\net5.0\LINQExample.csproj.AssemblyReference.cache
+C:\Users\Hekki\source\repos\LINQExample\obj\Debug\net5.0\LINQExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hekki\source\repos\LINQExample\obj\Debug\net5.0\LINQExample.AssemblyInfoInputs.cache
+C:\Users\Hekki\source\repos\LINQExample\obj\Debug\net5.0\LINQExample.AssemblyInfo.cs
+C:\Users\Hekki\source\repos\LINQExample\obj\Debug\net5.0\LINQExample.csproj.CoreCompileInputs.cache
+C:\Users\Hekki\source\repos\LINQExample\obj\Debug\net5.0\LINQExample.dll
+C:\Users\Hekki\source\repos\LINQExample\obj\Debug\net5.0\ref\LINQExample.dll
+C:\Users\Hekki\source\repos\LINQExample\obj\Debug\net5.0\LINQExample.pdb
+C:\Users\Hekki\source\repos\LINQExample\obj\Debug\net5.0\LINQExample.genruntimeconfig.cache

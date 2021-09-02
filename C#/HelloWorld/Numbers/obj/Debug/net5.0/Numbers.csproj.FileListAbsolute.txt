@@ -1,0 +1,16 @@
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\bin\Debug\net5.0\Numbers.exe
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\bin\Debug\net5.0\Numbers.deps.json
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\bin\Debug\net5.0\Numbers.runtimeconfig.json
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\bin\Debug\net5.0\Numbers.runtimeconfig.dev.json
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\bin\Debug\net5.0\Numbers.dll
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\bin\Debug\net5.0\ref\Numbers.dll
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\bin\Debug\net5.0\Numbers.pdb
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\obj\Debug\net5.0\Numbers.csprojAssemblyReference.cache
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\obj\Debug\net5.0\Numbers.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\obj\Debug\net5.0\Numbers.AssemblyInfoInputs.cache
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\obj\Debug\net5.0\Numbers.AssemblyInfo.cs
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\obj\Debug\net5.0\Numbers.csproj.CoreCompileInputs.cache
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\obj\Debug\net5.0\Numbers.dll
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\obj\Debug\net5.0\ref\Numbers.dll
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\obj\Debug\net5.0\Numbers.pdb
+D:\Git Repos\CodeSchool\HelloWorld\Numbers\obj\Debug\net5.0\Numbers.genruntimeconfig.cache

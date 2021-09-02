@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<ApplicationUser> SignInManager
+
+<div class="text-center">
+    @if (SignInManager.IsSignedIn(User)) {
+        <span>Hey, @User.Identity.Name</span>
+        <a href="~/Identity/MyAccount/Logout" class="h5">Logout</a>
+    } else {
+        <a href="~/Identity/MyAccount/Login" class="h5">Login</a>
+        <a href="~/Identity/MyAccount/Register" class="h5">Sign up</a>
+    }
+</div>

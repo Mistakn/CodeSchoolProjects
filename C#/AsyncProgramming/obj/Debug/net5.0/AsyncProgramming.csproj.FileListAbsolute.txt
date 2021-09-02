@@ -1,0 +1,16 @@
+C:\Users\Hekki\source\repos\AsyncProgramming\bin\Debug\net5.0\AsyncProgramming.exe
+C:\Users\Hekki\source\repos\AsyncProgramming\bin\Debug\net5.0\AsyncProgramming.deps.json
+C:\Users\Hekki\source\repos\AsyncProgramming\bin\Debug\net5.0\AsyncProgramming.runtimeconfig.json
+C:\Users\Hekki\source\repos\AsyncProgramming\bin\Debug\net5.0\AsyncProgramming.runtimeconfig.dev.json
+C:\Users\Hekki\source\repos\AsyncProgramming\bin\Debug\net5.0\AsyncProgramming.dll
+C:\Users\Hekki\source\repos\AsyncProgramming\bin\Debug\net5.0\ref\AsyncProgramming.dll
+C:\Users\Hekki\source\repos\AsyncProgramming\bin\Debug\net5.0\AsyncProgramming.pdb
+C:\Users\Hekki\source\repos\AsyncProgramming\obj\Debug\net5.0\AsyncProgramming.csproj.AssemblyReference.cache
+C:\Users\Hekki\source\repos\AsyncProgramming\obj\Debug\net5.0\AsyncProgramming.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hekki\source\repos\AsyncProgramming\obj\Debug\net5.0\AsyncProgramming.AssemblyInfoInputs.cache
+C:\Users\Hekki\source\repos\AsyncProgramming\obj\Debug\net5.0\AsyncProgramming.AssemblyInfo.cs
+C:\Users\Hekki\source\repos\AsyncProgramming\obj\Debug\net5.0\AsyncProgramming.csproj.CoreCompileInputs.cache
+C:\Users\Hekki\source\repos\AsyncProgramming\obj\Debug\net5.0\AsyncProgramming.dll
+C:\Users\Hekki\source\repos\AsyncProgramming\obj\Debug\net5.0\ref\AsyncProgramming.dll
+C:\Users\Hekki\source\repos\AsyncProgramming\obj\Debug\net5.0\AsyncProgramming.pdb
+C:\Users\Hekki\source\repos\AsyncProgramming\obj\Debug\net5.0\AsyncProgramming.genruntimeconfig.cache

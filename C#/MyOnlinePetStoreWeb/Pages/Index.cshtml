@@ -1,0 +1,129 @@
+﻿@page "/products"
+@using MyOnlinePetStoreWeb.Data
+@model MyOnlinePetStoreWeb.Pages.IndexModel
+
+
+<div class="text-center">
+    <h1 class="display-4">My Online Pet Store</h1>
+</div>
+
+
+<div class="row justify-content-end mt-5">
+    <div class="col-12 col-md-6 col-lg-4 d-grid">
+        <a href="~/Product" class="btn btn-primary"><i class="fa fa-plus"></i> Add Product</a>
+    </div>
+</div>
+
+
+
+<div class="mt-5 mb-3">
+    <span class="h2">Productos:</span>
+</div>
+
+
+@if (Model.Products.Any()) {
+
+    @*Ciclo para mostrar todos los productos*@
+    <section>
+        @foreach (var product in Model.Products) {
+            <div class="card bg-light mb-3">
+                <div class="card-body">
+                    <div class="row justify-content-around">
+                        <div class="col-12 col-lg-6 col-xl-3">
+                            @if (@product.ImageURL != null) {
+                                <a href="@product.ImageURL" class="image-btn" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                    <img class="img-thumbnail" src="@product.ImageURL" />
+                                </a>
+                            } else {
+                                <img class="img-thumbnail" src="~/images/no-image.png" />
+                            }
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-xl-3 my-auto">
+                            <div class="row">
+                                <h3 class="card-title font-weight-bold">@product.Name</h3>
+                            </div>
+                            <div class="row">
+                                <span class="h5 font-weight-bold text-success">$@product.Price</span>
+                            </div>
+                            <div class="row">
+                                <span class="h6">Created @product.CreatedDate.ToString("f")</span>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-lg-2 d-grid my-auto">
+                            <a href="~/Product/@product.ProductID"
+                               class="btn btn-primary">Details</a>
+                        </div>
+
+                        @if (User.Identity.IsAuthenticated && (User.IsInRole(RolesEnum.Administrator.ToString()) || User.IsInRole(RolesEnum.Manager.ToString()))) {
+                            <div class="col-4 col-lg-2 d-grid my-auto">
+                                <a href="~/EditProduct/@product.ProductID"
+                                   class="btn btn-info">Edit</a>
+                            </div>
+                        }
+
+                        @if (User.Identity.IsAuthenticated && User.IsInRole(RolesEnum.Administrator.ToString())) {
+                            <form method="post" class="col-4 col-lg-2 d-grid my-auto">
+                                <input type="hidden" name="ProductID" value="@product.ProductID" />
+                                <button type="submit" class="btn btn-danger" id="btnDelete">Delete</button>
+                            </form>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </section>
+    @*END Ciclo para mostrar todos los productos*@
+
+} else {
+
+    <div class="row justify-content-center my-5">
+        <div class="col-auto">
+            <span class="h2 font-weight-bold">Sin resultados</span>
+        </div>
+    </div>
+
+}
+
+
+@* Modal to show image *@
+<div class="modal" tabindex="-1" id="imageModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" id="imageContainer" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</div>
+@*END Modal to show image *@
+
+
+
+@section Scripts {
+    <script>
+
+        @*$('#btnDelete').on('click', (event) => { });*@
+        $('#btnDelete').click((event) => {
+            event.preventDefault();
+            var confirm = confirm("Are you sure?");
+
+            if (confirm) {
+                $(this).parent('form').submit();
+            }
+        });
+
+        $('.image-btn'), click((event) => {
+            event.preventDefault();
+
+            var imageURL = $(this).prop('href');
+            $('#imageContainer').prop('src', imageURL);
+        });
+
+    </script>
+}

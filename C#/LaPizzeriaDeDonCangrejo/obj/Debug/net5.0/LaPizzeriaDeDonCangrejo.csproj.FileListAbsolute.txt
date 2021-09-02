@@ -1,0 +1,16 @@
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\bin\Debug\net5.0\LaPizzeriaDeDonCangrejo.exe
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\bin\Debug\net5.0\LaPizzeriaDeDonCangrejo.deps.json
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\bin\Debug\net5.0\LaPizzeriaDeDonCangrejo.runtimeconfig.json
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\bin\Debug\net5.0\LaPizzeriaDeDonCangrejo.runtimeconfig.dev.json
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\bin\Debug\net5.0\LaPizzeriaDeDonCangrejo.dll
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\bin\Debug\net5.0\ref\LaPizzeriaDeDonCangrejo.dll
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\bin\Debug\net5.0\LaPizzeriaDeDonCangrejo.pdb
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\obj\Debug\net5.0\LaPizzeriaDeDonCangrejo.csproj.AssemblyReference.cache
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\obj\Debug\net5.0\LaPizzeriaDeDonCangrejo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\obj\Debug\net5.0\LaPizzeriaDeDonCangrejo.AssemblyInfoInputs.cache
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\obj\Debug\net5.0\LaPizzeriaDeDonCangrejo.AssemblyInfo.cs
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\obj\Debug\net5.0\LaPizzeriaDeDonCangrejo.csproj.CoreCompileInputs.cache
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\obj\Debug\net5.0\LaPizzeriaDeDonCangrejo.dll
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\obj\Debug\net5.0\ref\LaPizzeriaDeDonCangrejo.dll
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\obj\Debug\net5.0\LaPizzeriaDeDonCangrejo.pdb
+C:\Users\Hekki\source\repos\LaPizzeriaDeDonCangrejo\obj\Debug\net5.0\LaPizzeriaDeDonCangrejo.genruntimeconfig.cache

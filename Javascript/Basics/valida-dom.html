@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Valida DOM</title>
+</head>
+
+<body>
+    Insert your city: <input type="text"
+           id="textBox1"
+           placeholder="Insert your city"
+           oninput="validateButtons()">
+
+    <button id="btn1"
+            type="button"
+            disabled="true">Button 1</button>
+    <button id="btn2"
+            type="button"
+            disabled="true">Button 2</button>
+
+    <script>
+        var textBox = document.getElementById('textBox1');
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+
+        /*textBox.addEventListener('input', (e) => {
+            let textBoxValue = e.target.value;
+            console.log(textBoxValue);
+
+            if (textBoxValue) {
+                btn1.disabled = false;
+                btn2.disabled = false;
+            } else {
+                btn1.disabled = true;
+                btn2.disabled = true;
+            }
+        });*/
+
+        function validateButtons() {
+            // Repeat for N Input Boxes need to validate
+            let characterLengthInputBox1 = document.getElementById('textBox1').value.length;
+
+            if (characterLengthInputBox1 > 0) {
+                btn1.disabled = false;
+                btn2.disabled = false;
+            } else {
+                btn1.disabled = true;
+                btn2.disabled = true;
+            }
+        }
+    </script>
+</body>
+
+</html>

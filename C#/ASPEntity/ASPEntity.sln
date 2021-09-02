@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPEntity", "ASPEntity.csproj", "{B7D6E326-F464-414E-A546-F8D1BAC5C147}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyOnlinePetStoreWeb", "..\MyOnlinePetStoreWeb\MyOnlinePetStoreWeb.csproj", "{002845D0-E93B-41DB-83AC-D2D60A0CDBB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7D6E326-F464-414E-A546-F8D1BAC5C147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D6E326-F464-414E-A546-F8D1BAC5C147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D6E326-F464-414E-A546-F8D1BAC5C147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D6E326-F464-414E-A546-F8D1BAC5C147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{002845D0-E93B-41DB-83AC-D2D60A0CDBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{002845D0-E93B-41DB-83AC-D2D60A0CDBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{002845D0-E93B-41DB-83AC-D2D60A0CDBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{002845D0-E93B-41DB-83AC-D2D60A0CDBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6528AD6-1E58-4831-BE41-9643BC224D08}
+	EndGlobalSection
+EndGlobal

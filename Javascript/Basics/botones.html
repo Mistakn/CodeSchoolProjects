@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div id="buttonGroup">
+        <button id="button1"
+                class="odd">Button 1</button>
+        <button id="button2">Button 2</button>
+        <button id="button3"
+                class="odd">Button 3</button>
+    </div>
+
+
+    <script>
+        console.log(document.children);
+
+        var newButton = document.createElement('button');
+        newButton.innerText = 'Button 4';
+        newButton.id = 'button4';
+        document.getElementById('buttonGroup').appendChild(newButton);
+
+        var buttons = document.getElementsByTagName('button');
+        console.log(buttons);
+
+        for (button of buttons) {
+            button.style.color = 'red';
+        }
+
+        var oddButtons = document.getElementsByClassName('odd');
+        for (button of oddButtons) {
+            button.style.color = 'blue';
+        }
+
+        var btn1 = document.getElementById('button1');
+        btn1.addEventListener('click', () => { alert('Click button1'); });
+
+        var btn2 = document.getElementById('button2');
+        var btn3 = document.getElementById('button3');
+    </script>
+
+</body>
+
+</html>

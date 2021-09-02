@@ -1,0 +1,128 @@
+﻿@page "/Customers"
+@using MyOnlinePetStoreWeb.Data
+@model MyOnlinePetStoreWeb.Pages.CustomersModel
+
+<div class="text-center">
+    <h1 class="display-4">My Online Pet Store</h1>
+</div>
+
+
+<div class="row justify-content-end mt-5">
+    <div class="col-12 col-md-6 col-lg-4 d-grid">
+        <a href="~/NewCustomer" class="btn btn-primary"><i class="fa fa-plus"></i> Add Customer</a>
+    </div>
+</div>
+
+
+<div class="mt-5 mb-3">
+    <span class="h2">Customers:</span>
+</div>
+
+
+@if (Model.Customers.Any()) {
+
+    @* Ciclo para mostrar todos los clientes *@
+    <section>
+        @foreach (var customer in Model.Customers) {
+            <div class="card bg-light mb-3">
+                <div class="card-body">
+                    <div class="row justify-content-around">
+
+                        <div class="col-12 col-lg-4 my-auto">
+                            @* Customer Name *@
+                            <div class="row">
+                                <h3 class="card-title font-weight-bold">@customer.FirstName @customer.LastName</h3>
+                            </div>
+                            @* END Customer Name *@
+
+                            @* Customer Address *@
+                            @if (customer.Address != null) {
+                                <div class="row">
+                                    <span class="h6 font-weight-bold">@customer.Address.StreetAddress, @customer.Address.City, @customer.Address.Country, @customer.Address.StateOrProvinceAbbr @customer.Address.PostalCode</span>
+                                </div>
+                            }
+                            @* END Customer Address *@
+                        </div>
+
+                        <div class="col-4 col-lg-2 d-grid my-auto">
+                            <a href="/Index"
+                               class="btn btn-primary">Details</a>
+                        </div>
+
+                        @if (User.Identity.IsAuthenticated && User.IsInRole(RolesEnum.Administrator.ToString())) {
+                            <div class="col-4 col-lg-2 d-grid my-auto">
+                                <a href="~/EditCustomerAddress/@customer.CustomerID"
+                                   class="btn btn-info">Edit Address</a>
+                            </div>
+
+                            <div class="col-4 col-lg-2 d-grid my-auto">
+                                <a href="~/EditCustomer/@customer.CustomerID"
+                                   class="btn btn-info">Edit</a>
+                            </div>
+
+                            @if (User.Identity.Name != "Administrator@Administrator.com" && User.Identity.Name != "Manager@Manager.com") {
+                                <form method="post" class="col-4 col-lg-2 d-grid my-auto">
+                                    <input type="hidden" name="CustomerID" value="@customer.CustomerID" />
+                                    <button type="submit" class="btn btn-danger" id="btnDelete">Delete</button>
+                                </form>
+                            }
+                        }
+
+                    </div>
+                </div>
+            </div>
+        }
+    </section>
+    @* END Ciclo para mostrar todos los clientes *@
+
+} else {
+
+    <div class="row justify-content-center my-5">
+        <div class="col-auto">
+            <span class="h2 font-weight-bold">Sin resultados</span>
+        </div>
+    </div>
+
+}
+
+
+@* Modal to show image *@
+<div class="modal" tabindex="-1" id="imageModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" id="imageContainer" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</div>
+@*END Modal to show image *@
+
+
+
+@section Scripts {
+    <script>
+
+        @*$('#btnDelete').on('click', (event) => { });*@
+        $('#btnDelete').click((event) => {
+            event.preventDefault();
+            var confirm = confirm("Are you sure?");
+
+            if (confirm) {
+                $(this).parent('form').submit();
+            }
+        });
+
+        $('.image-btn'), click((event) => {
+            event.preventDefault();
+
+            var imageURL = $(this).prop('href');
+            $('#imageContainer').prop('src', imageURL);
+        });
+
+    </script>
+}

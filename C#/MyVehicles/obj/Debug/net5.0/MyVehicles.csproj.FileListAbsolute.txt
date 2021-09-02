@@ -1,0 +1,16 @@
+C:\Users\Hekki\source\repos\MyVehicles\bin\Debug\net5.0\MyVehicles.exe
+C:\Users\Hekki\source\repos\MyVehicles\bin\Debug\net5.0\MyVehicles.deps.json
+C:\Users\Hekki\source\repos\MyVehicles\bin\Debug\net5.0\MyVehicles.runtimeconfig.json
+C:\Users\Hekki\source\repos\MyVehicles\bin\Debug\net5.0\MyVehicles.runtimeconfig.dev.json
+C:\Users\Hekki\source\repos\MyVehicles\bin\Debug\net5.0\MyVehicles.dll
+C:\Users\Hekki\source\repos\MyVehicles\bin\Debug\net5.0\ref\MyVehicles.dll
+C:\Users\Hekki\source\repos\MyVehicles\bin\Debug\net5.0\MyVehicles.pdb
+C:\Users\Hekki\source\repos\MyVehicles\obj\Debug\net5.0\MyVehicles.csproj.AssemblyReference.cache
+C:\Users\Hekki\source\repos\MyVehicles\obj\Debug\net5.0\MyVehicles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hekki\source\repos\MyVehicles\obj\Debug\net5.0\MyVehicles.AssemblyInfoInputs.cache
+C:\Users\Hekki\source\repos\MyVehicles\obj\Debug\net5.0\MyVehicles.AssemblyInfo.cs
+C:\Users\Hekki\source\repos\MyVehicles\obj\Debug\net5.0\MyVehicles.csproj.CoreCompileInputs.cache
+C:\Users\Hekki\source\repos\MyVehicles\obj\Debug\net5.0\MyVehicles.dll
+C:\Users\Hekki\source\repos\MyVehicles\obj\Debug\net5.0\ref\MyVehicles.dll
+C:\Users\Hekki\source\repos\MyVehicles\obj\Debug\net5.0\MyVehicles.pdb
+C:\Users\Hekki\source\repos\MyVehicles\obj\Debug\net5.0\MyVehicles.genruntimeconfig.cache

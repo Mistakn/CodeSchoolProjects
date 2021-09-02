@@ -1,0 +1,16 @@
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\bin\Debug\net5.0\Fibonacci.exe
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\bin\Debug\net5.0\Fibonacci.deps.json
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\bin\Debug\net5.0\Fibonacci.runtimeconfig.json
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\bin\Debug\net5.0\Fibonacci.runtimeconfig.dev.json
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\bin\Debug\net5.0\Fibonacci.dll
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\bin\Debug\net5.0\ref\Fibonacci.dll
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\bin\Debug\net5.0\Fibonacci.pdb
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\obj\Debug\net5.0\Fibonacci.csproj.AssemblyReference.cache
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\obj\Debug\net5.0\Fibonacci.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\obj\Debug\net5.0\Fibonacci.AssemblyInfoInputs.cache
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\obj\Debug\net5.0\Fibonacci.AssemblyInfo.cs
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\obj\Debug\net5.0\Fibonacci.csproj.CoreCompileInputs.cache
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\obj\Debug\net5.0\Fibonacci.dll
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\obj\Debug\net5.0\ref\Fibonacci.dll
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\obj\Debug\net5.0\Fibonacci.pdb
+D:\Git Repos\CodeSchool\HelloWorld\Fibonacci\obj\Debug\net5.0\Fibonacci.genruntimeconfig.cache

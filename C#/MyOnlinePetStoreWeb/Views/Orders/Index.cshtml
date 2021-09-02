@@ -1,0 +1,85 @@
+﻿@model MyOnlinePetStoreWeb.Models.ViewModels.OrdersVM
+@using MyOnlinePetStoreWeb.Data
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout";
+}
+
+<div class="row justify-content-between">
+
+    <div class="col-7">
+
+        <h1>Orders</h1>
+
+        @*<p>
+                <a asp-action="Create">Create New</a>
+            </p>*@
+        <form method="get" asp-action="Index" asp-controller="Orders">
+            <div class="row">
+                <div class="col-3 form-group">
+                    <label>Search by Order ID</label>
+                    <input type="text" class="form-control" asp-for="SearchQuery" />
+                </div>
+                <div class="col-3 mt-auto mb-3">
+                    <button type="submit" class="btn btn-block btn-secondary">Search</button>
+                </div>
+            </div>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Orders[0].OrderID)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Orders[0].OrderPlaced)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Orders[0].OrderFulfilled)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Orders[0].Status)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Orders[0].Customer)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Orders) {
+                    <tr>
+                        <th>
+                            @Html.DisplayFor(model => item.OrderID)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(model => item.OrderPlaced)
+                        </th>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderFulfilled)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Customer.Email)
+                        </td>
+                        <td>
+                            @if (User.IsInRole(RolesEnum.Administrator.ToString())) {
+                                <a asp-action="Edit" asp-route-id="@item.OrderID">Edit</a>
+                            }
+                            @*<a asp-action="Details" asp-route-id="@item.OrderID">Details</a> |*@
+                            @*<a asp-action="Delete" asp-route-id="@item.OrderID">Delete</a>*@
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="col-4">
+        @await Html.PartialAsync("_MostRecentOrder", Model.MostRecentOrder)
+    </div>
+
+</div>

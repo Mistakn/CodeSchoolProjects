@@ -1,0 +1,7 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="D:\Git Repos\CodeSchool\MyOnlinePetStoreClient\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\Git Repos\CodeSchool\MyOnlinePetStoreClient\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="D:\Git Repos\CodeSchool\MyOnlinePetStoreClient\wwwroot\" />
+  <ContentRoot BasePath="/Identity" Path="C:\Users\Hekki\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.9\staticwebassets\V4\" />
+  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\Hekki\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\5.0.9\build\..\staticwebassets\" />
+</StaticWebAssets>

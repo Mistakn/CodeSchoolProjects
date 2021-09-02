@@ -1,0 +1,53 @@
+﻿@page "/todo"
+
+
+<div class="row">
+    <div class="col-12 text-center">
+        <span class="h3">To Do</span>
+    </div>
+</div>
+
+@foreach (var item in todos) {
+
+    <div class="form-row align-content-center my-2">
+
+        <div class="col-auto my-auto">
+            <input type="checkbox" @bind="@item.IsDone" />
+        </div>
+
+        <div class="col">
+            <input type="text" class="form-control" @bind="item.Title" />
+        </div>
+
+    </div>
+
+}
+
+<div class="form-row align-items-end mt-4">
+    <div class="col-12 col-lg-8 form-group">
+        <label>Task Name:</label>
+        <input type="text" class="form-control" @bind="newTodo" />
+    </div>
+
+    <div class="col-12 col-lg-4 form-group">
+        <button class="btn btn-block btn-primary" @onclick="AddTask">Add Task</button>
+    </div>
+</div>
+
+
+
+@code {
+
+    private List<ToDoItem> todos = new();
+    private string newTodo;
+
+    private void AddTask() {
+        if (!string.IsNullOrEmpty(newTodo)) {
+
+            var task = new ToDoItem { Title = newTodo, IsDone = false };
+
+            todos.Add(task);
+            newTodo = "";
+        }
+    }
+}

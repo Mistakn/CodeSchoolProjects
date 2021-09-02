@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Demo Functions</title>
+</head>
+
+<body>
+    <script src="functions.js"></script>
+    <script>
+        let result = addNumbers(1, 2);
+        console.log(result);
+
+        var haystack = "Cuitlahuac";
+        var needle = "i";
+
+        let found = findCharacter(haystack, needle);
+
+        if (found) {
+            console.log(`"${needle}" found in "${haystack}"`);
+        }
+
+
+        const elevateNumber = (number, power) => Math.pow(number, power);
+
+        console.log(elevateNumber(2, 4));
+
+        const multiplication = (num1, num2) => num1 * num2;
+
+        console.log(multiplication(2, 4));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\bin\Debug\net5.0\Ejercicio_1.exe
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\bin\Debug\net5.0\Ejercicio_1.deps.json
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\bin\Debug\net5.0\Ejercicio_1.runtimeconfig.json
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\bin\Debug\net5.0\Ejercicio_1.runtimeconfig.dev.json
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\bin\Debug\net5.0\Ejercicio_1.dll
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\bin\Debug\net5.0\ref\Ejercicio_1.dll
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\bin\Debug\net5.0\Ejercicio_1.pdb
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\obj\Debug\net5.0\Ejercicio_1.csproj.AssemblyReference.cache
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\obj\Debug\net5.0\Ejercicio_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\obj\Debug\net5.0\Ejercicio_1.AssemblyInfoInputs.cache
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\obj\Debug\net5.0\Ejercicio_1.AssemblyInfo.cs
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\obj\Debug\net5.0\Ejercicio_1.csproj.CoreCompileInputs.cache
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\obj\Debug\net5.0\Ejercicio_1.dll
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\obj\Debug\net5.0\ref\Ejercicio_1.dll
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\obj\Debug\net5.0\Ejercicio_1.pdb
+D:\Git Repos\CodeSchool\Ejercicios_27_7_2021\obj\Debug\net5.0\Ejercicio_1.genruntimeconfig.cache

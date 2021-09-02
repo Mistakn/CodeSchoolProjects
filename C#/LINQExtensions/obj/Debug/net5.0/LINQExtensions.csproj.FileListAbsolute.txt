@@ -1,0 +1,16 @@
+C:\Users\Hekki\source\repos\LINQExtensions\bin\Debug\net5.0\LINQExtensions.exe
+C:\Users\Hekki\source\repos\LINQExtensions\bin\Debug\net5.0\LINQExtensions.deps.json
+C:\Users\Hekki\source\repos\LINQExtensions\bin\Debug\net5.0\LINQExtensions.runtimeconfig.json
+C:\Users\Hekki\source\repos\LINQExtensions\bin\Debug\net5.0\LINQExtensions.runtimeconfig.dev.json
+C:\Users\Hekki\source\repos\LINQExtensions\bin\Debug\net5.0\LINQExtensions.dll
+C:\Users\Hekki\source\repos\LINQExtensions\bin\Debug\net5.0\ref\LINQExtensions.dll
+C:\Users\Hekki\source\repos\LINQExtensions\bin\Debug\net5.0\LINQExtensions.pdb
+C:\Users\Hekki\source\repos\LINQExtensions\obj\Debug\net5.0\LINQExtensions.csproj.AssemblyReference.cache
+C:\Users\Hekki\source\repos\LINQExtensions\obj\Debug\net5.0\LINQExtensions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hekki\source\repos\LINQExtensions\obj\Debug\net5.0\LINQExtensions.AssemblyInfoInputs.cache
+C:\Users\Hekki\source\repos\LINQExtensions\obj\Debug\net5.0\LINQExtensions.AssemblyInfo.cs
+C:\Users\Hekki\source\repos\LINQExtensions\obj\Debug\net5.0\LINQExtensions.csproj.CoreCompileInputs.cache
+C:\Users\Hekki\source\repos\LINQExtensions\obj\Debug\net5.0\LINQExtensions.dll
+C:\Users\Hekki\source\repos\LINQExtensions\obj\Debug\net5.0\ref\LINQExtensions.dll
+C:\Users\Hekki\source\repos\LINQExtensions\obj\Debug\net5.0\LINQExtensions.pdb
+C:\Users\Hekki\source\repos\LINQExtensions\obj\Debug\net5.0\LINQExtensions.genruntimeconfig.cache

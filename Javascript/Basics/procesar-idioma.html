@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Procesar Idioma</title>
+</head>
+
+<body>
+
+    <input type="radio"
+           id="spanish"
+           name="language"
+           value="spanish"
+           checked>
+    <label for="spanish">Spanish</label>
+
+    <input type="radio"
+           id="english"
+           name="language"
+           value="english">
+    <label for="english">English</label>
+
+    <button id="btn">Hola, usuario</button>
+
+    <script>
+
+        let radioSpanish = document.getElementById('spanish');
+        let radioEnglish = document.getElementById('english');
+        let btn = document.getElementById('btn');
+        btn.onclick = () => { showSpanishMessage() };
+
+        radioSpanish.addEventListener('change', () => { radioHandler() });
+        radioEnglish.addEventListener('change', () => { radioHandler() });
+
+
+        function radioHandler() {
+            let checkedRadio = Array.from(document.getElementsByName("language")).find(r => r.checked).value;
+
+            if (checkedRadio == "spanish") {
+                btn.innerText = 'Hola, usuario';
+                btn.onclick = () => { showSpanishMessage() };
+            } else {
+                btn.innerText = 'Hello, user';
+                btn.onclick = () => { showEnglishMessage() };
+            }
+        }
+
+
+        function showSpanishMessage() {
+            alert('Hola, usuario');
+        }
+
+
+        function showEnglishMessage() {
+            alert('Hello, user');
+        }
+    </script>
+
+</body>
+
+</html>

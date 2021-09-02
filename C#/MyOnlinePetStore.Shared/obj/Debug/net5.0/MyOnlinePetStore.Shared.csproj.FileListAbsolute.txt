@@ -1,0 +1,12 @@
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\bin\Debug\net5.0\MyOnlinePetStore.Shared.deps.json
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\bin\Debug\net5.0\MyOnlinePetStore.Shared.dll
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\bin\Debug\net5.0\ref\MyOnlinePetStore.Shared.dll
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\bin\Debug\net5.0\MyOnlinePetStore.Shared.pdb
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\obj\Debug\net5.0\MyOnlinePetStore.Shared.csproj.AssemblyReference.cache
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\obj\Debug\net5.0\MyOnlinePetStore.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\obj\Debug\net5.0\MyOnlinePetStore.Shared.AssemblyInfoInputs.cache
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\obj\Debug\net5.0\MyOnlinePetStore.Shared.AssemblyInfo.cs
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\obj\Debug\net5.0\MyOnlinePetStore.Shared.csproj.CoreCompileInputs.cache
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\obj\Debug\net5.0\MyOnlinePetStore.Shared.dll
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\obj\Debug\net5.0\ref\MyOnlinePetStore.Shared.dll
+D:\Git Repos\CodeSchool\MyOnlinePetStore.Shared\obj\Debug\net5.0\MyOnlinePetStore.Shared.pdb

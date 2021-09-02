@@ -1,0 +1,16 @@
+D:\Git Repos\CodeSchool\BankAccount\obj\Debug\net5.0\MyBank.csproj.AssemblyReference.cache
+D:\Git Repos\CodeSchool\BankAccount\obj\Debug\net5.0\MyBank.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git Repos\CodeSchool\BankAccount\obj\Debug\net5.0\MyBank.AssemblyInfoInputs.cache
+D:\Git Repos\CodeSchool\BankAccount\obj\Debug\net5.0\MyBank.AssemblyInfo.cs
+D:\Git Repos\CodeSchool\BankAccount\obj\Debug\net5.0\MyBank.csproj.CoreCompileInputs.cache
+D:\Git Repos\CodeSchool\BankAccount\bin\Debug\net5.0\MyBank.exe
+D:\Git Repos\CodeSchool\BankAccount\bin\Debug\net5.0\MyBank.deps.json
+D:\Git Repos\CodeSchool\BankAccount\bin\Debug\net5.0\MyBank.runtimeconfig.json
+D:\Git Repos\CodeSchool\BankAccount\bin\Debug\net5.0\MyBank.runtimeconfig.dev.json
+D:\Git Repos\CodeSchool\BankAccount\bin\Debug\net5.0\MyBank.dll
+D:\Git Repos\CodeSchool\BankAccount\bin\Debug\net5.0\ref\MyBank.dll
+D:\Git Repos\CodeSchool\BankAccount\bin\Debug\net5.0\MyBank.pdb
+D:\Git Repos\CodeSchool\BankAccount\obj\Debug\net5.0\MyBank.dll
+D:\Git Repos\CodeSchool\BankAccount\obj\Debug\net5.0\ref\MyBank.dll
+D:\Git Repos\CodeSchool\BankAccount\obj\Debug\net5.0\MyBank.pdb
+D:\Git Repos\CodeSchool\BankAccount\obj\Debug\net5.0\MyBank.genruntimeconfig.cache

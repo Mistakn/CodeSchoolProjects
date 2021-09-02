@@ -1,0 +1,12 @@
+﻿.product__card span {
+    color: black;
+}
+
+.product__card:hover {
+    background-color: gray;
+}
+
+    .product__card:hover span {
+        color: black;
+        text-decoration: none;
+    }

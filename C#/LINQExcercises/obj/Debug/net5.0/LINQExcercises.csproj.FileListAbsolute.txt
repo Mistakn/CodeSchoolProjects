@@ -1,0 +1,16 @@
+C:\Users\Hekki\source\repos\LINQExcercises\bin\Debug\net5.0\LINQExcercises.exe
+C:\Users\Hekki\source\repos\LINQExcercises\bin\Debug\net5.0\LINQExcercises.deps.json
+C:\Users\Hekki\source\repos\LINQExcercises\bin\Debug\net5.0\LINQExcercises.runtimeconfig.json
+C:\Users\Hekki\source\repos\LINQExcercises\bin\Debug\net5.0\LINQExcercises.runtimeconfig.dev.json
+C:\Users\Hekki\source\repos\LINQExcercises\bin\Debug\net5.0\LINQExcercises.dll
+C:\Users\Hekki\source\repos\LINQExcercises\bin\Debug\net5.0\ref\LINQExcercises.dll
+C:\Users\Hekki\source\repos\LINQExcercises\bin\Debug\net5.0\LINQExcercises.pdb
+C:\Users\Hekki\source\repos\LINQExcercises\obj\Debug\net5.0\LINQExcercises.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hekki\source\repos\LINQExcercises\obj\Debug\net5.0\LINQExcercises.AssemblyInfoInputs.cache
+C:\Users\Hekki\source\repos\LINQExcercises\obj\Debug\net5.0\LINQExcercises.AssemblyInfo.cs
+C:\Users\Hekki\source\repos\LINQExcercises\obj\Debug\net5.0\LINQExcercises.csproj.CoreCompileInputs.cache
+C:\Users\Hekki\source\repos\LINQExcercises\obj\Debug\net5.0\LINQExcercises.dll
+C:\Users\Hekki\source\repos\LINQExcercises\obj\Debug\net5.0\ref\LINQExcercises.dll
+C:\Users\Hekki\source\repos\LINQExcercises\obj\Debug\net5.0\LINQExcercises.pdb
+C:\Users\Hekki\source\repos\LINQExcercises\obj\Debug\net5.0\LINQExcercises.genruntimeconfig.cache
+C:\Users\Hekki\source\repos\LINQExcercises\obj\Debug\net5.0\LINQExcercises.csproj.AssemblyReference.cache

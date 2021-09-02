@@ -1,0 +1,16 @@
+D:\Git Repos\CodeSchool\HelloWorld\Lists\bin\Debug\net5.0\Lists.exe
+D:\Git Repos\CodeSchool\HelloWorld\Lists\bin\Debug\net5.0\Lists.deps.json
+D:\Git Repos\CodeSchool\HelloWorld\Lists\bin\Debug\net5.0\Lists.runtimeconfig.json
+D:\Git Repos\CodeSchool\HelloWorld\Lists\bin\Debug\net5.0\Lists.runtimeconfig.dev.json
+D:\Git Repos\CodeSchool\HelloWorld\Lists\bin\Debug\net5.0\Lists.dll
+D:\Git Repos\CodeSchool\HelloWorld\Lists\bin\Debug\net5.0\ref\Lists.dll
+D:\Git Repos\CodeSchool\HelloWorld\Lists\bin\Debug\net5.0\Lists.pdb
+D:\Git Repos\CodeSchool\HelloWorld\Lists\obj\Debug\net5.0\Lists.csproj.AssemblyReference.cache
+D:\Git Repos\CodeSchool\HelloWorld\Lists\obj\Debug\net5.0\Lists.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git Repos\CodeSchool\HelloWorld\Lists\obj\Debug\net5.0\Lists.AssemblyInfoInputs.cache
+D:\Git Repos\CodeSchool\HelloWorld\Lists\obj\Debug\net5.0\Lists.AssemblyInfo.cs
+D:\Git Repos\CodeSchool\HelloWorld\Lists\obj\Debug\net5.0\Lists.csproj.CoreCompileInputs.cache
+D:\Git Repos\CodeSchool\HelloWorld\Lists\obj\Debug\net5.0\Lists.dll
+D:\Git Repos\CodeSchool\HelloWorld\Lists\obj\Debug\net5.0\ref\Lists.dll
+D:\Git Repos\CodeSchool\HelloWorld\Lists\obj\Debug\net5.0\Lists.pdb
+D:\Git Repos\CodeSchool\HelloWorld\Lists\obj\Debug\net5.0\Lists.genruntimeconfig.cache

@@ -1,0 +1,32 @@
+﻿@inject IProductBrandAPI ProductBrandAPI
+
+<div class="container-fluid">
+    <div class="row border bg-secondary">
+        <div class="col-auto text-center rounded py-3 px-3">
+            <span class="h6 text-white">Filter by brand:</span>
+        </div>
+
+        <div class="col-auto">
+            <a href="/" class="btn text-center rounded py-3 px-3 product_brand__item">
+                <span class="h5 text-white">All</span>
+            </a>
+        </div>
+
+        @foreach (var brand in brands) {
+            <ProductBrandItem Data="brand" />
+        }
+    </div>
+</div>
+
+
+@code {
+    private List<ProductBrandDTO> brands = new();
+
+    protected override async Task OnInitializedAsync() {
+        try {
+            brands = await ProductBrandAPI.GetProductBrandsAsync();
+        } catch (AccessTokenNotAvailableException ex) {
+            ex.Redirect();
+        }
+    }
+}

@@ -1,0 +1,81 @@
+﻿@inject IOrderAPI OrderAPI
+@inject AuthenticationStateProvider State
+
+<div class="col-12 col-md-6 col-lg-4 col-xl-3 my-3 p-3 product__card">
+
+    <a href="/product/@Data.ProductID">
+        <div class="row">
+            <div class="col-12">
+                @if (Data.ImageURL != null) {
+                    <img src="@Data.ImageURL" class="img-fluid" />
+                } else {
+                    <img class="img-thumbnail" src="/images/no-image.png" />
+                }
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-12">
+                <span class="h5 font-weight-bold">@Data.Name</span>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-12">
+                <span class="h6">$ @Data.Price</span>
+            </div>
+        </div>
+    </a>
+
+    <div class="row mt-auto mb-3">
+        <div class="col-8">
+            <span>Quantity</span>
+        </div>
+
+        <div class="col-4">
+            <select class="form-control" @bind="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <button class="btn btn-block btn-info" @onclick="() => AddtoCart(Data.ProductID)">Add to cart @Data.ProductID</button>
+        </div>
+    </div>
+
+</div>
+
+@code {
+
+    [Parameter]
+    public ProductDTO Data { get; set; }
+
+
+    public string quantity;
+
+
+    public async Task AddtoCart(int id) {
+
+        var dto = new AddProductToOrderDTO {
+            UserId = 0,
+            UserName = string.Empty,
+            ProductId = id,
+            Quantity = 5
+        };
+
+        try {
+            await OrderAPI.AddProductToOrderAsync(dto);
+        } catch (Exception) {
+            throw;
+        }
+    }
+
+}

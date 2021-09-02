@@ -1,0 +1,91 @@
+﻿@page "/EditCustomerAddress/{CustomerID}"
+@model MyOnlinePetStoreWeb.Pages.EditCustomerAddressModel
+
+
+<form method="post">
+
+    <div class="row">
+
+        @* Address DTO *@
+        <div class="col-12 mt-4 mb-3">
+            <span class="h4">Customer Address</span>
+        </div>
+
+        <div class="col-12 my-3">
+
+            <div class="form-group">
+                <label asp-for="AddressDTO.StreetAddress">Street Address</label>
+                <input type="text"
+                       class="form-control"
+                       asp-for="AddressDTO.StreetAddress" />
+                <span asp-validation-for="AddressDTO.StreetAddress"
+                      class="text-danger"></span>
+            </div>
+
+        </div>
+
+        <div class="col-12 my-3">
+
+            <div class="form-group">
+                <label asp-for="AddressDTO.City">City</label>
+                <input type="text"
+                       class="form-control"
+                       asp-for="AddressDTO.City" />
+                <span asp-validation-for="AddressDTO.City"
+                      class="text-danger"></span>
+            </div>
+
+        </div>
+
+        <div class="col-12 my-3">
+
+            <div class="form-group">
+                <label asp-for="AddressDTO.StateOrProvinceAbbr">State or Province Abbreviation</label>
+                <input type="text"
+                       class="form-control"
+                       asp-for="AddressDTO.StateOrProvinceAbbr" />
+                <span asp-validation-for="AddressDTO.StateOrProvinceAbbr"
+                      class="text-danger"></span>
+            </div>
+
+        </div>
+
+        <div class="col-12 my-3">
+
+            <div class="form-group">
+                <label asp-for="AddressDTO.Country">Country</label>
+                <input type="text"
+                       class="form-control"
+                       asp-for="AddressDTO.Country" />
+                <span asp-validation-for="AddressDTO.Country"
+                      class="text-danger"></span>
+            </div>
+
+        </div>
+
+        <div class="col-12 my-3">
+
+            <div class="form-group">
+                <label asp-for="AddressDTO.PostalCode">Postal Code</label>
+                <input type="text"
+                       class="form-control"
+                       asp-for="AddressDTO.PostalCode" />
+                <span asp-validation-for="AddressDTO.PostalCode"
+                      class="text-danger"></span>
+            </div>
+
+        </div>
+        @* END Address DTO *@
+
+    </div>
+
+    <div class="row justify-content-center mt-3">
+        <div class="col-6 d-grid">
+            <button type="submit"
+                    class="btn btn-primary">
+                Submit
+            </button>
+        </div>
+    </div>
+
+</form>

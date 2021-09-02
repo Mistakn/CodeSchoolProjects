@@ -1,0 +1,75 @@
+﻿@page "/Users"
+@model MyOnlinePetStoreWeb.Pages.UsersModel
+
+<div class="text-center">
+    <h1 class="display-4">My Online Pet Store</h1>
+</div>
+
+
+<div class="row justify-content-end mt-5">
+    <div class="col-12 col-md-6 col-lg-4 d-grid">
+        <a href="~/NewUser" class="btn btn-primary"><i class="fa fa-plus"></i> Add User</a>
+    </div>
+</div>
+
+
+<div class="mt-5 mb-3">
+    <span class="h2">Users:</span>
+</div>
+
+
+@if (Model.Users.Any()) {
+
+    @* Ciclo para mostrar todos los usuarios *@
+    <section>
+        @foreach (var user in Model.Users) {
+            <div class="card bg-light mb-3">
+                <div class="card-body">
+                    <div class="row justify-content-around">
+
+                        <div class="col-12 col-lg-8 my-auto">
+                            @* User Full name *@
+                            <div class="row">
+                                <h3 class="card-title font-weight-bold">@user.FirstName @user.LastName</h3>
+                            </div>
+                            @* END User Full name *@
+
+                            @* User Username *@
+                            <div class="row">
+                                <h4>@user.UserName</h4>
+                            </div>
+                            @* END User Username *@
+
+                            @* User Role *@
+                            @*<div class="row">
+                                    <h3 class="card-title font-weight-bold">@user</h3>
+                                </div>*@
+                            @* END User Role *@
+                        </div>
+
+                        <div class="col-4 col-lg-2 d-grid my-auto">
+                            <a href="~/EditUser/@user.Id"
+                               class="btn btn-info">Edit</a>
+                        </div>
+
+                        <form method="post" class="col-4 col-lg-2 d-grid my-auto">
+                            <input type="hidden" name="UserID" value="@user.Id" />
+                            <button type="submit" class="btn btn-danger" id="btnDelete">Delete</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        }
+    </section>
+    @* END Ciclo para mostrar todos los usuarios *@
+
+} else {
+
+    <div class="row justify-content-center my-5">
+        <div class="col-auto">
+            <span class="h2 font-weight-bold">Sin resultados</span>
+        </div>
+    </div>
+
+}

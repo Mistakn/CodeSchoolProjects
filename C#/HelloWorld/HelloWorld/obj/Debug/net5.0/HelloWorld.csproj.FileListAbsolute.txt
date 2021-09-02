@@ -1,0 +1,16 @@
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.exe
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.deps.json
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.json
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.dev.json
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.dll
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\bin\Debug\net5.0\ref\HelloWorld.dll
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\bin\Debug\net5.0\HelloWorld.pdb
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.csprojAssemblyReference.cache
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfoInputs.cache
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfo.cs
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.csproj.CoreCompileInputs.cache
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.dll
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\obj\Debug\net5.0\ref\HelloWorld.dll
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.pdb
+D:\Git Repos\CodeSchool\HelloWorld\HelloWorld\obj\Debug\net5.0\HelloWorld.genruntimeconfig.cache

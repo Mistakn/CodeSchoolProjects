@@ -1,0 +1,45 @@
+﻿@model MyOnlinePetStoreWeb.Entities.Order
+
+@if (Model != null) {
+    <div class="row border rounded p-3">
+        <div class="col-12">
+
+            <div class="row">
+                <span class="h3 font-weight-bold">Most recent order</span>
+            </div>
+
+            <div class="row">
+                <span>Order ID: @Model.OrderID</span>
+            </div>
+
+            <div class="row">
+                <span>Status: @Model.Status</span>
+            </div>
+
+            <div class="row">
+                <span>Date placed: @Model.OrderPlaced</span>
+            </div>
+
+            @if (Model.ProductOrders != null && Model.ProductOrders.Any()) {
+
+                <div class="row mt-3">
+                    <span class="h4">Products in order:</span>
+                </div>
+
+                @foreach (var product in Model.ProductOrders) {
+                    <div class="row mt-1 pr-5">
+                        <span>@product</span>
+                    </div>
+                }
+
+            }
+
+        </div>
+    </div>
+} else {
+    <div class="row border rounded p-3">
+        <div class="col-12">
+            <span>No recent Order</span>
+        </div>
+    </div>
+}
