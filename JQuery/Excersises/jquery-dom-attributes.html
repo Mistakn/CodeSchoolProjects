@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Jquery DOM Attributes</title>
+</head>
+
+<body>
+    <p id="paragraph1">This is a paragraph</p>
+
+    <script src="./libs/jquery-3.6.0.min.js"></script>
+    <script>
+        $(() => {
+            console.log($('#paragraph1')[0].tagName);
+        });
+    </script>
+</body>
+
+</html>
