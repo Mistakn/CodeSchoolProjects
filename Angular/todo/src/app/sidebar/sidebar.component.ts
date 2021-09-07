@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  data = 'Sidebar Data';
+  estaSeleccionado = true;
+
+  currentClasses = {
+    star: true,
+    active: false,
+    other: true
+  };
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  public checkboxChanged() {
+
   }
 
 }

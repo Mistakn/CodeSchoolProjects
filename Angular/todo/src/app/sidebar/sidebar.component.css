@@ -1,0 +1,13 @@
+p {
+    color: red;
+}
+
+.seleccionado {
+    background-color: yellow;
+    color: red;
+}
+
+.other {
+    font-weight: bold;
+    color: black;
+}

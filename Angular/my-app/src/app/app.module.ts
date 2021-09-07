@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MatematicoComponent } from './matematico/matematico.component';
+import { FormsModule } from '@angular/forms';
+import { MatematicoResultComponent } from './matematico-result/matematico-result.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MatematicoComponent,
+    MatematicoResultComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

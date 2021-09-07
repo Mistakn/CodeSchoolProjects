@@ -1,1 +1,16 @@
-<p>sidebar works!</p>
+<h1>Side Bar Works</h1>
+
+<h3>{{data}}</h3>
+
+<p [innerText]="data"></p>
+
+<p>El valor de data es: {{data}}</p>
+
+<p [class.seleccionado]="estaSeleccionado">Este texto puede o no estar seleccionado</p>
+
+<p [class]="currentClasses">Objeto clases</p>
+
+<input type="checkbox"
+       id="seleccionadoONo"
+       [(ngModel)]="estaSeleccionado"
+       (change)="checkboxChanged()">
