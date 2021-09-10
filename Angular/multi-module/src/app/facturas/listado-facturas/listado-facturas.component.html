@@ -1,0 +1,23 @@
+<div class="row justify-content-center my-3">
+    <div class="col-auto h2 border-bottom">
+        <span class="font-weight-bold">Facturas</span>
+    </div>
+</div>
+
+<ol>
+    <li class="my-2"
+        *ngFor="let factura of facturas">
+        <div>
+            ID: {{factura.id}}
+        </div>
+        <div>
+            Fecha: {{factura.fecha | date}}
+        </div>
+        <div>
+            Client ID: {{factura.clientId}}
+        </div>
+        <div>
+            Monto: {{factura.monto | currency}}
+        </div>
+    </li>
+</ol>

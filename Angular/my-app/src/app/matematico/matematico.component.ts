@@ -13,7 +13,9 @@ export class MatematicoComponent implements OnInit {
   public numero1: number = 0;
   public numero2: number = 0;
   public resultado: number = 0;
-  public operacion: Operations = 'Suma';
+  public operacionARealizar: Operations = 'Suma';
+  public operaciones: Operations[] = ['Suma', 'Resta', 'Multiplicacion', 'Division'];
+  public today: Date = new Date();
 
   constructor() { }
 
@@ -26,7 +28,7 @@ export class MatematicoComponent implements OnInit {
     if (!this.numero1 || !this.numero2)
       return;
 
-    switch (this.operacion) {
+    switch (this.operacionARealizar) {
       case 'Suma':
         this.resultado = this.numero1 + this.numero2;
         break;
@@ -50,6 +52,6 @@ export class MatematicoComponent implements OnInit {
     this.numero1 = 0;
     this.numero2 = 0;
     this.resultado = 0;
-    this.operacion = 'Suma';
+    this.operacionARealizar = 'Suma';
   }
 }

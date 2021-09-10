@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnChanges, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
 import { Producto } from '../models/producto.model';
 
 @Component({
@@ -6,7 +6,7 @@ import { Producto } from '../models/producto.model';
   templateUrl: './new-product.component.html',
   styleUrls: ['./new-product.component.scss']
 })
-export class NewProductComponent implements OnInit {
+export class NewProductComponent implements OnInit, OnDestroy, OnChanges {
 
   public nombreProducto: string = '';
   public precioProducto: string = '';
@@ -14,9 +14,20 @@ export class NewProductComponent implements OnInit {
   @Output()
   eventoAgregarProducto = new EventEmitter();
 
+
   constructor() { }
 
+
   ngOnInit(): void {
+    console.log('Agregar producto inicializado');
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log('Agregar producto cambio');
+  }
+
+  ngOnDestroy(): void {
+    console.log('Agregar producto destruido');
   }
 
 

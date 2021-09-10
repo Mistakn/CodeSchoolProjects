@@ -1,0 +1,32 @@
+<div class="row justify-content-center my-3">
+    <div class="col-auto h2 border-bottom">
+        <span class="font-weight-bold">Posts</span>
+    </div>
+</div>
+
+<div *ngIf="(posts$ | async) as postsObservable">
+
+    <div class="row my-3">
+        <div class="col-auto h4">
+            <span class="font-weight-bold">Number of Posts: {{postsObservable.length}}</span>
+        </div>
+    </div>
+
+    <ol>
+        <li class="my-2"
+            *ngFor="let post of postsObservable">
+            <div>
+                ID: {{post.id}}
+            </div>
+            <div>
+                User ID: {{post.userId}}
+            </div>
+            <div>
+                Title: {{post.title}}
+            </div>
+            <div>
+                Body: {{post.body}}
+            </div>
+        </li>
+    </ol>
+</div>

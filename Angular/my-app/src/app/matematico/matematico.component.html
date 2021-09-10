@@ -1,7 +1,18 @@
-Suma <input type="radio"
-       value="Suma"
-       [(ngModel)]="operacion">
-| Resta<input type="radio"
+<ng-template #loggedOn>
+       <p>User logged in</p>
+</ng-template>
+
+<p>{{'Hello' | uppercase}}</p>
+<p>{{'Hello' | lowercase}}</p>
+<p>Fecha de hoy: {{today | date}}</p>
+
+<div *ngFor="let operacion of operaciones">
+       {{operacion}} <input type="radio"
+              [value]="operacion"
+              [(ngModel)]="operacionARealizar">
+</div>
+
+<!-- | Resta<input type="radio"
        value="Resta"
        [(ngModel)]="operacion">
 | Multiplicacion <input type="radio"
@@ -9,17 +20,18 @@ Suma <input type="radio"
        [(ngModel)]="operacion">
 | Division <input type="radio"
        value="Division"
-       [(ngModel)]="operacion">
+       [(ngModel)]="operacion"> -->
 
 <div style="margin-top: 3rem;">
-    Numero 1: <input type="number"
-           [(ngModel)]="numero1">
-    Numero 2: <input type="number"
-           [(ngModel)]="numero2">
-    Resultado de {{operacion}}: {{resultado}}
-    <app-matematico-result [result]="resultado" (eventoLimpiarCampos)="limpiarCampos()"></app-matematico-result>
+       Numero 1: <input type="number"
+              [(ngModel)]="numero1">
+       Numero 2: <input type="number"
+              [(ngModel)]="numero2">
+       Resultado de {{operacionARealizar}}: {{resultado}}
+       <app-matematico-result [result]="resultado"
+                              (eventoLimpiarCampos)="limpiarCampos()"></app-matematico-result>
 </div>
 
 <div style="margin-top: 3rem;">
-    <button (click)="calculate()">Calculate</button>
+       <button (click)="calculate()">Calculate</button>
 </div>

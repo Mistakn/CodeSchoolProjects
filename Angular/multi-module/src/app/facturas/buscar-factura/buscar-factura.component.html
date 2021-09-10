@@ -1,0 +1,47 @@
+<div class="row justify-content-center my-3">
+    <div class="col-auto h2 border-bottom">
+        <span class="font-weight-bold">Buscar Factura por ID</span>
+    </div>
+</div>
+
+<div class="row my-3">
+    <div class="col-9 form-group">
+        <label>ID a buscar:</label>
+        <input type="text"
+               class="form-control"
+               [(ngModel)]="idFacturaABuscar">
+    </div>
+    <div class="col-3 d-grid">
+        <button class="btn btn-primary"
+                (click)="buscarFactura()">Buscar</button>
+    </div>
+</div>
+
+<div class="p-3 alert-success"
+     *ngIf="facturaBuscada">
+    <div class="row">
+        <div class="col-12 h3">
+            <span>Datos de factura con ID {{idFacturaABuscar}}:</span>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col">
+            ID: {{facturaBuscada.id}}
+        </div>
+        <div class="col">
+            Fecha: {{facturaBuscada.fecha | date}}
+        </div>
+        <div class="col">
+            Client ID: {{facturaBuscada.clientId}}
+        </div>
+        <div class="col">
+            Monto: {{facturaBuscada.monto | currency}}
+        </div>
+    </div>
+</div>
+
+<div class="row p-3 alert-info"
+     *ngIf="!facturaBuscada">
+    <span>Factura no encontrada</span>
+</div>

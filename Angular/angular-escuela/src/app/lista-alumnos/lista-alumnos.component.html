@@ -1,0 +1,43 @@
+<div style="margin-top: 3rem; margin-bottom: 3rem;">
+    <h1>Alumnos</h1>
+</div>
+
+Tabla <input type="radio"
+       name="displayType"
+       value="Table"
+       [(ngModel)]="displayType">
+Lista <input type="radio"
+       name="displayType"
+       value="List"
+       [(ngModel)]="displayType">
+
+<div *ngIf="displayType == 'List'"
+     style="margin-top: 3rem; margin-bottom: 3rem;">
+    <ul>
+        <li *ngFor="let alumno of alumnos"
+            style="margin-bottom: 3rem;">
+            <div>Nombre Alumno: {{alumno.nombre}}</div>
+            <div>Apellidos Alumno: {{alumno.apellidos}}</div>
+            <div>Correo Alumno: {{alumno.correo}}</div>
+            <div>Fecha Ingreso Alumno: {{alumno.fechaIngreso | date}}</div>
+        </li>
+    </ul>
+</div>
+
+<div *ngIf="displayType == 'Table'"
+     style="margin-top: 3rem; margin-bottom: 3rem;">
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+            <th>Fecha Ingreso</th>
+        </tr>
+        <tr *ngFor="let alumno of alumnos">
+            <td>{{alumno.nombre}}</td>
+            <td>{{alumno.apellidos}}</td>
+            <td>{{alumno.correo}}</td>
+            <td>{{alumno.fechaIngreso | date}}</td>
+        </tr>
+    </table>
+</div>
