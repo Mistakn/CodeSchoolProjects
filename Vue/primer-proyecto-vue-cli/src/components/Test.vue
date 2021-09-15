@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      nombre: "Cuit Rodriguez",
+      nombre: 'Cuit Rodriguez',
     };
   },
 };
