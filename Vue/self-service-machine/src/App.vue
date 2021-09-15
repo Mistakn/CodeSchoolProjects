@@ -1,17 +1,14 @@
 <template>
   <div id="app">
-    <SelfServiceMachine />
+    <router-view />
   </div>
 </template>
 
 <script>
 
-import SelfServiceMachine from './components/SelfServiceMachine.vue';
-
 export default {
   name: 'App',
   components: {
-    SelfServiceMachine,
   },
 };
 </script>
@@ -24,4 +21,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+@import'~bootstrap/dist/css/bootstrap.css';
 </style>

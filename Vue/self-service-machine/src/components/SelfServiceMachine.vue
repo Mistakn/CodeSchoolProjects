@@ -1,27 +1,35 @@
 <template>
-<main>
-    <section class="items">
-            <h4>Pick your items</h4>
-            <div class="product" v-for="product in products" :key="product.name">
-                <div class="photo">
-                    <img :src="product.photo">
-                </div>
-                <div class="description">
-                    <span class="name">{{product.name}}</span>
-                    <span class="price">$ {{product.price}}</span>
-                    <div class="quantity-area">
-                        <button @click="removeItem(product)">-</button>
-                        <span class="quantity">1</span>
-                        <button @click="addItem(product)">+</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <div class="container">
+      <main>
+          <section class="items">
+                  <h4>Pick your items</h4>
+                  <div class="product" v-for="product in products" :key="product.name">
+                      <div class="photo">
+                          <img :src="product.photo">
+                      </div>
+                      <div class="description">
+                          <span class="name">{{product.name}}</span>
+                          <span class="price">$ {{product.price}}</span>
+                          <div class="quantity-area">
+                              <button @click="removeItem(product)">-</button>
+                              <span class="quantity">1</span>
+                              <button @click="addItem(product)">+</button>
+                          </div>
+                      </div>
+                  </div>
+              </section>
 
-        <section class="summary">
-            <Summary :orderItems="orderItems"/>
-        </section>
-</main>
+              <section class="summary">
+                  <Summary :orderItems="orderItems"/>
+              </section>
+      </main>
+
+      <div class="row justify-content-center my-3">
+        <div class="col-12 col-md-6 d-grid">
+          <router-link to="/" class="btn btn-danger">Logout</router-link >
+        </div>
+      </div>
+  </div>
 </template>
 
 <script>
